@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+/* src/App.css */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ant-layout-header {
+  background: #001529 !important;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 1.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ant-layout-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 80vh;
+  padding: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.ant-layout-footer {
+  text-align: center;
+  background-color: #001529;
+  color: #ffffff;
+  padding: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Form Container */
+.form-container {
+  max-width: 400px;
+  width: 100%;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.ant-form-item-label > label {
+  color: #333;
+}
+
+.ant-btn-primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+.ant-btn-primary:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}
+
+.link-button {
+  color: #1890ff;
+  margin-top: 1rem;
+  text-align: center;
+  display: block;
+}
+
+.link-button:hover {
+  color: #40a9ff;
 }
